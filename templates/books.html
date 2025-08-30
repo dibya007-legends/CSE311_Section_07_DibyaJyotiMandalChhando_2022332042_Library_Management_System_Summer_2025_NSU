@@ -1,0 +1,67 @@
+{% extends 'layout.html' %}
+{% block body %}
+<br>
+<h1>Books</h1>
+
+<div class="d-flex mb-2">
+  <a class="btn btn-success" href="/add_book">Add New Book</a>
+  <a class="btn btn-secondary ms-2" href="/import_books">Import From API</a>
+</div>
+<hr>
+
+{% if books %}
+<form method="POST" action="/books/delete_selected">
+
+<table class="table table-striped align-middle">
+  <thead class="table-light">
+    <tr>
+      <!-- “Select all” checkbox -->
+      <th style="width:20px;">
+        <input type="checkbox" id="select-all" onclick="toggleAll(this)">
+      </th>
+      <th>Book ID</th>
+      <th>Title</th>
+      <th>Author(s)</th>
+      <th>Total No. of Books</th>
+      <th>Books Available to Rent</th>
+      <th>Rented Count</th>
+      <th class="text-center">Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for book in books %}
+    <tr>
+      <td><input type="checkbox" name="book_ids" value="{{book.id}}" class="row-checkbox"></td>
+      <td><a href="/book/{{book.id}}" class="btn btn-sm btn-dark">{{"{:05d}".format(book.id)}}</a></td>
+      <td onclick="window.location='/book/{{book.id}}';">{{book.title}}</td>
+      <td onclick="window.location='/book/{{book.id}}';">{{book.author}}</td>
+      <td>{{book.total_quantity}}</td>
+      <td>{{book.available_quantity}}</td>
+      <td>{{book.rented_count}}</td>
+      <td class="text-center">
+        <a href="edit_book/{{book.id}}" class="btn btn-sm btn-primary">Edit</a>
+      </td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+
+<!-- bulk action footer -->
+<div class="bg-light p-3 text-end rounded">
+  <button type="submit"
+          class="btn btn-danger px-4"
+          onclick="return confirm('Delete selected books?');">
+    Delete Selected
+  </button>
+</div>
+</form>
+
+<!-- JS for select-all -->
+<script>
+function toggleAll(source) {
+  const checkboxes = document.querySelectorAll('.row-checkbox');
+  checkboxes.forEach(cb => cb.checked = source.checked);
+}
+</script>
+{% endif %}
+{% endblock %}

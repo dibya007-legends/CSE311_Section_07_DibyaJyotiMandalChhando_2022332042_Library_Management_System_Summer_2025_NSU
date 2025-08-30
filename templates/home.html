@@ -1,0 +1,28 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+<div class="container py-5 my-5 text-center">
+    <!-- Heading Section -->
+    <h1 class="display-4 fw-bold text-primary">Library Management System</h1>
+    <p class="lead mb-5 text-muted">
+        This web application helps librarians manage and track library operations. It allows seamless management of books, members, and transactions, making library management more efficient. Whether adding new books, viewing members, or processing transactions, this system provides an intuitive interface for librarians to manage their daily activities.
+    </p>
+    
+    <!-- Action Buttons -->
+    <div class="d-grid gap-3 d-sm-flex justify-content-sm-center">
+        <a href="/reports" class="btn btn-lg btn-primary rounded-pill px-5 py-3 shadow-lg">View Reports</a>
+        <a href="/books" class="btn btn-lg btn-outline-secondary rounded-pill px-5 py-3 shadow-lg">Manage Books</a>
+        <a href="/members" class="btn btn-lg btn-outline-secondary rounded-pill px-5 py-3 shadow-lg">Manage Members</a>
+        <a href="/transactions" class="btn btn-lg btn-outline-secondary rounded-pill px-5 py-3 shadow-lg">Manage Transactions</a>
+    </div>
+</div>
+
+<!-- Footer Section -->
+<footer class="bg-dark text-white py-4 mt-auto">
+    <div class="container text-center">
+        <p class="mb-0">© 2025 Developed By: <strong>Dibya Jyoti Mandal Chhando </strong> ID: 2022332042</p>
+        <p>Designed and Developed for Library Management System Project</p>
+    </div>
+</footer>
+
+{% endblock %}
