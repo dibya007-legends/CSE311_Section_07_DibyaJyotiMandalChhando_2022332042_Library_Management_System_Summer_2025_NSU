@@ -107,3 +107,11 @@ This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) f
 ---
 
 ## 📈 Project Structure
+📁 Library_Management_System/
+├── 📄 app.py                  # Main Flask application
+├── 📁 templates/              # HTML templates
+├── 📁 static/                 # CSS, JS files
+├── 📄 requirements.txt        # Dependencies
+├── 📄 LibraryDB.sql           # SQL for database setup
+├── 📄 LICENSE                 # Project License
+├── 📄 README.md               # Project 
