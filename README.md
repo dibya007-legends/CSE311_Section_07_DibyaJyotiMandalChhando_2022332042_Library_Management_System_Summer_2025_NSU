@@ -114,4 +114,4 @@ This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) f
 ├── 📄 requirements.txt        # Dependencies
 ├── 📄 LibraryDB.sql           # SQL for database setup
 ├── 📄 LICENSE                 # Project License
-├── 📄 README.md               # Project 
+├── 📄 README.md               # Project description
