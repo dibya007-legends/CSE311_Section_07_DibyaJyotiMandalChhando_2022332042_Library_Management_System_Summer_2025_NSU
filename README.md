@@ -1,0 +1,2 @@
+# CSE311_Section_07_DibyaJyotiMandalChhando_2022332042_Library_Management_System_Summer_2025_NSU
+Library Management System developed as part of CSE311 Summer ’25 project (Section 07, Dibya Jyoti Mandal Chhando, ID: 2022332042, NSU). This system tracks books, members, and transactions with features for adding books, issuing/returning, and generating reports. Built using Python (Flask), HTML, CSS, MySQL.
