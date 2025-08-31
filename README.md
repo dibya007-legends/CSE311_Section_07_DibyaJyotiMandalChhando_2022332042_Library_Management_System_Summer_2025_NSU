@@ -21,12 +21,12 @@ To get started, follow these steps to set up the project on your local machine:
 
 1. **Clone the repository**:
     ```bash
-    git clone https://github.com/your-username/your-repository.git
+    git clone https://github.com/dibya007-legends/CSE311_Section_07_DibyaJyotiMandalChhando_2022332042_Library_Management_System_Summer_2025_NSU.git
     ```
 
 2. **Navigate into the project directory**:
     ```bash
-    cd your-repository
+    cd CSE311_Section_07_DibyaJyotiMandalChhando_2022332042_Library_Management_System_Summer_2025_NSU
     ```
 
 3. **Create a virtual environment**:
@@ -99,19 +99,13 @@ This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) f
 ---
 
 #### ⚡ Technologies Used:
-- **Frontend**: HTML, CSS, JavaScript
-- **Backend**: Python, Flask
+- **Frontend**: HTML, CSS
+- **Backend**: Python (Flask)
 - **Database**: MySQL
 - **Version Control**: Git, GitHub
 
 ---
 
 ## 📈 Project Structure
-📁 Library_Management_System/
-├── 📄 app.py                  # Main Flask application
-├── 📁 templates/              # HTML templates
-├── 📁 static/                 # CSS, JS files
-├── 📄 requirements.txt        # Dependencies
-├── 📄 LibraryDB.sql           # SQL for database setup
-├── 📄 LICENSE                 # Project License
-├── 📄 README.md               # Project description
+<img width="550" height="337" alt="image" src="https://github.com/user-attachments/assets/b18088b6-e6d5-486a-bf5b-b3068945f8f7" />
+
